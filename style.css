@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --lt-cyan: hsl(179, 50%, 50%);
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  padding: 2rem 1.5rem;
+}
+
+h2 {
+  font-weight: 700;
+}
+.join {
+  width: 100%;
+  background-color: #fff;
+}
+
+.join > h2 {
+  color: var(--cyan);
+}
+
+.join > p {
+  color: var(--blue);
+}
+
+#guarantee {
+  color: var(--yellow);
+}
+
+.monthly {
+  width: 100%;
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+.why {
+  width: 100%;
+  background-color: var(--lt-cyan);
+  color: #fff;
+}
+
+.why ul {
+  color: var(--gray);
+  list-style: none;
+}
