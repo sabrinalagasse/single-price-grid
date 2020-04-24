@@ -27,7 +27,7 @@ body {
 }
 
 .container > div {
-  padding: 2rem 1.5rem 0 1.5rem;
+  padding: 2rem 1.5rem;
   height: auto;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 #dollars {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 #per {
@@ -79,7 +79,7 @@ body {
 }
 
 .monthly > p {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .monthly button {
@@ -92,7 +92,6 @@ body {
   font-size: 1.1rem;
   color: #fff;
   box-shadow: 1px 5px 10px hsl(179, 62%, 35%);
-  margin-bottom: 1.5rem;
 }
 
 .why {
@@ -108,4 +107,11 @@ body {
   color: var(--gray);
   list-style: none;
   line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 750px) {
+  .monthly,
+  .why {
+    width: 50%;
+  }
 }
