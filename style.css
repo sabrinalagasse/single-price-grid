@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
 
 :root {
@@ -15,7 +16,6 @@
 }
 
 body {
-  font-family: "Karla", sans-serif;
   font-size: 16px;
 }
 
@@ -27,12 +27,10 @@ body {
 }
 
 .container > div {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+  height: auto;
 }
 
-h2 {
-  font-weight: 700;
-}
 .join {
   width: 100%;
   background-color: #fff;
@@ -44,10 +42,12 @@ h2 {
 
 .join > p {
   color: var(--blue);
+  line-height: 2;
 }
 
 #guarantee {
   color: var(--yellow);
+  padding: 1.5rem 0;
 }
 
 .monthly {
@@ -59,13 +59,29 @@ h2 {
   justify-content: start;
 }
 
+.monthly > h2 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
 #price {
   display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
 }
 
 #dollars {
   font-size: 3rem;
+  font-weight: 700;
 }
+#per {
+  color: var(--gray);
+}
+
+.monthly > p {
+  padding-bottom: 1rem;
+}
+
 .monthly button {
   width: 300px;
   height: 50px;
@@ -75,6 +91,8 @@ h2 {
   border-radius: 5px;
   font-size: 1.1rem;
   color: #fff;
+  box-shadow: 1px 5px 10px hsl(179, 62%, 35%);
+  margin-bottom: 1.5rem;
 }
 
 .why {
@@ -82,8 +100,12 @@ h2 {
   background-color: var(--lt-cyan);
   color: #fff;
 }
+.why > h2 {
+  padding-bottom: 1rem;
+}
 
 .why ul {
   color: var(--gray);
   list-style: none;
+  line-height: 1.5rem;
 }
