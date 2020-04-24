@@ -37,6 +37,7 @@ body {
 .join {
   width: 100%;
   background-color: #fff;
+  border-radius: 5px;
 }
 
 .join > h2 {
@@ -86,13 +87,12 @@ body {
 }
 
 .monthly button {
-  width: 300px;
-  height: 50px;
+  width: 16rem;
+  height: 3rem;
   margin: auto;
   background-color: var(--yellow);
   border: none;
   border-radius: 5px;
-  font-size: 1.1rem;
   color: #fff;
   box-shadow: 1px 5px 10px hsl(179, 62%, 35%);
 }
@@ -101,6 +101,8 @@ body {
   width: 100%;
   background-color: var(--lt-cyan);
   color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .why > h2 {
   padding-bottom: 1rem;
@@ -113,6 +115,9 @@ body {
 }
 
 @media only screen and (min-width: 750px) {
+  .container {
+    width: 650px;
+  }
   .monthly,
   .why {
     width: 50%;
