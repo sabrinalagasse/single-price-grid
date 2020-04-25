@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
+  font-weight: normal;
 }
 
 :root {
@@ -15,33 +16,38 @@
   --blue: hsl(218, 22%, 67%);
 }
 
+html,
 body {
   font-size: 16px;
   background-color: var(--gray);
+  height: 100%;
 }
 
 .container {
   width: 310px;
   margin: auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 2.5px 5px 15px 5px hsl(204, 43%, 80%);
+  margin-top: 160px;
+  border-radius: 10px;
 }
 
 .container > div {
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 3rem;
   height: auto;
 }
 
 .join {
   width: 100%;
   background-color: #fff;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
 }
 
 .join > h2 {
   color: var(--cyan);
+  font-weight: bold;
 }
 
 .join > p {
@@ -76,7 +82,6 @@ body {
 
 #dollars {
   font-size: 2.5rem;
-  font-weight: 700;
 }
 #per {
   color: var(--gray);
@@ -117,9 +122,16 @@ body {
 @media only screen and (min-width: 750px) {
   .container {
     width: 650px;
+    margin-top: 160px;
   }
   .monthly,
   .why {
     width: 50%;
+  }
+  .monthly {
+    border-bottom-left-radius: 5px;
+  }
+  .why {
+    border-bottom-left-radius: 0;
   }
 }
