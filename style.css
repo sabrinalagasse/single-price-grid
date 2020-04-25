@@ -30,7 +30,8 @@ body {
   flex-wrap: wrap;
   box-shadow: 2.5px 5px 15px 5px hsl(204, 43%, 80%);
   margin-top: 160px;
-  border-radius: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .container > div {
@@ -41,8 +42,6 @@ body {
 .join {
   width: 100%;
   background-color: #fff;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 5px;
 }
 
 .join > h2 {
@@ -106,8 +105,6 @@ body {
   width: 100%;
   background-color: var(--lt-cyan);
   color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 .why > h2 {
   padding-bottom: 1rem;
@@ -127,11 +124,5 @@ body {
   .monthly,
   .why {
     width: 50%;
-  }
-  .monthly {
-    border-bottom-left-radius: 5px;
-  }
-  .why {
-    border-bottom-left-radius: 0;
   }
 }
